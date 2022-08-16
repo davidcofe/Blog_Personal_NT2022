@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portafolio-David Corzo</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="name"> DAVID CORZO - INGENIERÍA INFORMÁTICA </h1>
+      <p> Mi nombre es David Alejandro Corzo Fernández, y actualmente estoy en tercer semestre de ingeniería informática en La Universidad de la Sabana. </p>
+
+      <button onclick="past()" id="Btn1"><b>PASADO</b></button>
+      <button onclick="present()" id="Btn2"><b>PRESENTE</b></button>
+      <button onclick="future()" id="Btn3"><b>FUTURO</b></button>
+    </header>
+
+    <main>
+      <section class="sec1" id="PastSctn" hidden>
+        <h2> Mi Pasado </h2>
+        <table border="1px">
+          <tr>
+            <th style="width:33%"><b> Colegio Humboldt - Caracas (2006-2013) </b><br><br>
+              <img src="imgs/colegiohumboldt.png" alt="Logo Colegio Humboldt" style="height:200px" align="center"> <br><br></th>
+            <th style="width:33%"><b> Colegio Andino - Deutsche Schule Bogotá (2013-2020) </b><br><br>
+              <img src="imgs/colegioandino.png" alt="Logo Colegio Andino" style="height:200px" align="center"> <br><br></th>
+            <th style="width:33%"><b> RWTH Aachen University (2020-2021) </b><br><br>
+              <img src="imgs/rwthaachen.png" alt="Logo RWTH Aachen" style="height:200px" align="center"> <br><br></th>
+          </tr>
+          <tr>
+            <td style="width:33%" align="center"> Estudie desde PreKinder hasta 7mo en Caracas. </td>
+            <td style="width:33%" align="center"> Me gradué en Bogotá con diploma interacional DIAP (Deutsches Internationales Abiturprüfung). </td>
+            <td style="width:33%" align="center"> Al salir del colegio me fui a Alemania a estudiar Computer Science, de la cual me retiré en 2021 en mi segundo semestre. </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="sec2" id="PresentSctn" hidden>
+        <h2> Mi Presente </h2>
+        <p> Actualmente estoy enfocado en mantener mis notas lo más altas posible, además de conocer nuevas personas con mis mismos intereses como posibles contactos a futuro.<br>
+          Tambien estoy aprovechando para salir de mi zona de confort lo más posible durante la carrera, para adquirir nuevas experiencias y crecer como persona. <br>
+           Y por ultimo, estoy tomando clases de coreano como preámbulo para un hipotético minor en filología, ya sea en la Sabana o en el extranjero. </p>
+      </section>
+
+      <section class="sec3" id="FutureSctn" hidden>
+        <h2> Mi Futuro </h2>
+        <h3 align="right"> Maestria </h3>
+        <p align="right"> Me gustaria hacer una maestria, aunque para este punto no sabria en que enfocarme. Dependera mucho de los gustos que adquiera durante lo que me queda de la carrera.</p>
+        <br><br>
+        <h3> Doctorado </h3>
+        <p> No tengo planes de hacer un doctorado, pero en el caso remoto en el que pueda hacer un minor de filología, me podría plantear hacer un enfoque en la humanizacion de los lenguajes de programacion, o algo por el estilo. </p>
+        <br><br>
+        <h3 align="right"> Titulos Externos </h3>
+        <p align="right"> Tengo como meta sacar la mayor cantidad de titulos de idioma posibles, como el Toefl o el Topik. Ahora más hacia mi carrera, quiero terminar los cursos que he estado haciendo sobre Networking y Big Data, y comenzar otros como el de Scrum o Power BI. </p>
+        <br><br>
+        <h3> Asentarse </h3>
+        <p> Si todo sale extremandamente bien me gustaria asentarme en un pais escandinavo, con la esperanza de poder trabajar alla y vivir con una familia. </p>
+      </section>
+    </main>
+
+    <style type="text/css">
+      body{
+        background-color: rgba(47, 15, 66, 1.0);
+      }
+      p{color: rgba(143, 162, 207, 1.0);}
+      h1, h2{color: rgba(77, 111, 189, 1.0)}
+      h3{color: rgba(102, 127, 186, 1.0)}
+      table{
+        border: 3px;
+        border-color: rgba(47, 15, 66, 1.0);
+        border-radius: 10px;
+      }
+      th, td{
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgba(142, 101, 166, 1.0);
+        color: rgba(7, 30, 84, 1.6);
+      }
+      #Btn1, #Btn2, #Btn3{
+        border: 1px solid black;
+        border-radius: 3px;
+        background-color: rgba(62, 115, 240, 1.0);
+        color: rgba(47, 15, 66, 1.0);
+      }
+    </style>
+
+    <script type="text/javascript">
+      function past() {
+        document.getElementById("PastSctn").hidden = false
+        document.getElementById("PresentSctn").hidden = true
+        document.getElementById("FutureSctn").hidden = true
+      }
+      function present() {
+        document.getElementById("PastSctn").hidden = true
+        document.getElementById("PresentSctn").hidden = false
+        document.getElementById("FutureSctn").hidden = true
+      }
+      function future() {
+        document.getElementById("PastSctn").hidden = true
+        document.getElementById("PresentSctn").hidden = true
+        document.getElementById("FutureSctn").hidden = false
+      }
+    </script>
+
+  </body>
+</html>
